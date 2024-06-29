@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="artificial_alert hidden">
+        <h2 class="texttext">Must fill out all inputs!</h2>
+        <button class="ok_button">Ok</button>
+    </div>
+
+    <div class="blurbg hidden"></div>
+    <div class="cover1"></div>
+    <div class="ball1"></div>
+    <div class="ball2 hidden"></div>
+
+    <div class="main_header">
+        <h1>Day Logger</h1>
+    </div>
+
+    <div class="confirm_modal hidden">   
+        <h1 class="edit_header">Edit My Log</h1>
+        <div class="container">
+        <textarea spellcheck="false"name="edit stuff" class="edit_log_area"></textarea>
+        </div>
+        <button class="confirm_button_modal">Confirm Log</button>
+        <button class="deny_button_modal">Go Back</button>
+        <button class="get_original_button_modal">Bring <br> Back <br> Original <br> Log</button>
+    </div>
+
+    <div class="main_body">  
+        <div class="input_date ">
+            <input spellcheck="false"placeholder="month..."class="month"type="text"> <h1 class="d1">/</h1>
+            <input spellcheck="false"placeholder="day..."class="day"type="text"><h1 class="d2">/</h1>
+            <input spellcheck="false"placeholder="year..."class="year"type="text">  
+        </div>
+        <textarea spellcheck="false"placeholder="Talk about memorable moments in your day..."name="main_input" spellcheck="false"class="alltext"></textarea>   
+        <button class="addlog"><b>Add Log</b></button>
+        <button class="clear_btn">Clear <br> Inputs</button>
+        <button class="see_my_logs_btn">See My<br>Past Logs</button>
+    </div>
+
+    <div class="all_logs_viewer hidden">
+        <h1 class="all_logs_viewer_header">My Day Logs</h1>
+        <button class="save_and_exit">Save and Exit</button>
+        <h3 class="info111">To delete an entry clear all content from it and when you save it, it will be removed from your logs. </h3>
+        <div class="content_section"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
